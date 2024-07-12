@@ -43,6 +43,9 @@ app.MapControllers();
 // Load data from the file into the database
 LoadPersonsFromFile(app.Services).Wait();
 
+
+app.Urls.Add("https://localhost:5001");
+app.Urls.Add("http://localhost:5000");
 // Run application
 app.Run();
 
